@@ -1,0 +1,144 @@
+    :root{
+        --CardFontSizeP: calc(12px + 1vw);
+        --CardFontSizeA: calc(5px  + 1.25vw);
+        --CardFontSizeB: calc(12px + 1.5vw);
+        --CardFontSizeH4: calc(12px + 2vw);
+        --CardFontSizeH1: calc(17px + 2vw);
+        --CardWidth: calc(100vw * 30/132);
+        --EstadoHabilitado: rgb(32, 216, 32) !important;
+        --EstadoMedio: rgb(255, 208, 0) !important;
+        --EstadoCritico: rgb(255, 0, 0) !important;
+        --FondoHeader:rgb(72, 76, 77);
+        
+        --TextoFondosObsc: rgb(255, 230, 230); 
+    }
+    *{
+      
+        min-width: auto !important;
+    
+      
+    }
+    input,textarea{ font-size: var(--CardFontSizeP);}
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+ .btn-compra-tickets { 
+    color: #25a342; 
+}
+
+.btn-form {
+    background: #96c93e;
+    color: #fff !important;
+  }
+  .btn-form:hover {
+     background: #74aa17; 
+}
+a, button{
+    font-size: var(--CardFontSizeA) !important;
+
+}
+
+p{
+    margin: 6px 0 6px 0;
+    font-size: var(--CardFontSizeP) !important;
+    
+    overflow-y: scroll !important;
+    
+   
+}
+h1{
+    font-size: var(--CardFontSizeH1) !important;
+}
+button{
+    font-size: var(--CardFontSizeB) !important;
+ 
+}
+h4{
+    font-size: var(--CardFontSizeH4) !important;
+
+}
+    body {
+        
+        background-size:100%;
+            margin: 0;
+        }
+
+   
+ .card{
+    max-width: var(--CardWidth);
+    align-items: center;
+    margin-bottom: 5vw;
+    border-width: 2px !important;
+   
+     }
+     .card div{
+       
+        overflow: hidden;
+        padding: 5px;
+    }
+    .card img{
+        height: auto;
+       width: var(--CardWidth);
+        min-width: auto !important;
+    }
+   
+    .card a{
+        margin: 1vw;
+    }
+ .card-body{
+   display: flex;
+   flex-direction: column;
+   
+ }
+ .card-body p{
+    height: calc(var(--CardWidth) * 8/11);
+ }
+   
+
+
+@keyframes ejemplo {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+ @keyframes abrir {
+    0% { max-height: 50px; }
+    100% { max-height:125px; }
+  }
+  
+  .prue {
+    background-color: rebeccapurple;
+    width: 360px;
+    max-height: 50px;
+    overflow: hidden;
+  & p{
+    visibility: collapse;
+  }
+  }
+  
+  .prue:hover{
+    
+    animation-name: abrir;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    & p{
+      visibility: visible;
+      animation-name: ejemplo;
+      animation-duration: 2s;
+      
+   
+    };
+
+    
+      overflow-y: scroll;
+  }
+  @media only screen and (max-width:500px) {
+ :root{ --CardFontSizeP: calc(9px + 3vw);
+  --CardFontSizeA: calc(5px  + 3.5vw);
+  --CardFontSizeB: calc(9px + 3.5vw);
+  --CardFontSizeH4: calc(9px + 4vw);
+  --CardFontSizeH1: calc(14px + 4vw);
+}}
